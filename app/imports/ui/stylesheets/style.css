@@ -3,7 +3,13 @@ body {
 }
 
 .ui.inverted.menu {
-  background-color: #1f9734;
+  background-color: #94e24f;
+}
+
+footer {
+  background-color: #94e24f;
+  color: white;
+  padding-bottom: 17px;
 }
 
 #login-buttons a, .accounts-dialog a {

@@ -1,35 +1,27 @@
 <template name="Home_Page">
-  <div class="ui container">
+  <div class="ui container colorblocktop">
+    <div class="ui column">
+      <table style="padding-top: 20px; opacity: .80" class="ui celled table">
+        <thead>
+        <tr>
+          <th>First</th>
+          <th>Last</th>
+          <th>Favorite Spot</th>
+          <th>Favorite Item</th>
+          <th>Ratings</th>
+        </tr>
+        </thead>
 
-    {{#if Template.subscriptionsReady}}
-    <table style="margin-top: 20px" class="ui celled table">
-      <thead>
-      <tr>
-        <th>First</th>
-        <th>Last</th>
-        <th>Favorite Food Spot</th>
-        <th>Favorite Item</th>
-        <th>Email</th>
-        <th>Edit</th>
-      </tr>
-      </thead>
-
-      <tbody>
-      {{#each contact in contactsList}}
-      <tr>
-        <td>{{contact.first}}</td>
-        <td>{{contact.last}}</td>
-        <td>{{contact.address}}</td>
-        <td>{{contact.telephone}}</td>
-        <td>{{contact.email}}</td>
-        <td><a href="{{pathFor 'Edit_Contact_Page' _id=contact._id}}">Edit</a></td>
-      </tr>
-      {{/each}}
-      </tbody>
-    </table>
-    {{else}}
-    {{> Loading}}
-    {{/if}}
-
+        <tbody>
+        <tr>
+          <td>Derrick</td>
+          <td>Comiso</td>
+          <td>L&L</td>
+          <td>Katsu Curry Bowl</td>
+          <td>10</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </template>

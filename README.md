@@ -1,6 +1,6 @@
 # Landing Page
 
-![](https://github.com/derrick-comiso/final-project-mockup/blob/master/doc/landing-page.PNG)
+![](https://github.com/derrick-comiso/final-project-mockup/blob/master/doc/landing-page.png)
 
 # Profile Page
 

@@ -1,15 +1,9 @@
 body {
-
+  background-color: rgb(8,112,79);
 }
 
 .ui.inverted.menu {
-  background-color: #94e24f;
-}
-
-footer {
-  background-color: #94e24f;
-  color: white;
-  padding-bottom: 17px;
+  background-color: #21ba45;
 }
 
 #login-buttons a, .accounts-dialog a {

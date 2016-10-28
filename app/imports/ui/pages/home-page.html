@@ -1,27 +1,17 @@
 <template name="Home_Page">
-  <div class="ui container colorblocktop">
-    <div class="ui column">
-      <table style="padding-top: 20px; opacity: .80" class="ui celled table">
-        <thead>
-        <tr>
-          <th>First</th>
-          <th>Last</th>
-          <th>Favorite Spot</th>
-          <th>Favorite Item</th>
-          <th>Ratings</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        <tr>
-          <td>Derrick</td>
-          <td>Comiso</td>
-          <td>L&L</td>
-          <td>Katsu Curry Bowl</td>
-          <td>10</td>
-        </tr>
-        </tbody>
-      </table>
+  <div class="ui raised segment container">
+    <h1 class="ui header">Welcome to Manoa Munchies!</h1>
+    <p>Ever wanted to eat lunch, but can't decide because you don't know what's available? Or you want something specific but don't know when it's served? Then Manoa Munchies can help! Here, you can check all the menus on campus, what foods are available now, and when the foods you love are available today. Check out some of UH Manoa's food spots below.</p>
+    <div class="ui three column grid container">
+      <div class="column" style="width: 250px; margin-left: 30px">
+        <a class="item"><img style="width: 200px" src="https://uhm.sodexomyway.com/images/Food_Court_at_Campus_Center_Logo_01_Page_3_tcm640-17274.jpg"></a>
+      </div>
+      <div class="column" style="width: 430px">
+        <a class="item"><img style="width: 400px; margin-top: 50px" src="http://manoa.hawaii.edu/food/resources/images/mainTitles/ppcTitle2.png"></a>
+      </div>
+      <div class="column" style="margin-left: 20px">
+        <a class="item"><img style="width: 300px" src="/images/gateway-cafe.jpg"></a>
+      </div>
     </div>
   </div>
 </template>

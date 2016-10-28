@@ -1,35 +1,50 @@
 <template name="Available_Foods_Page">
-  <div class="ui container">
-
-    {{#if Template.subscriptionsReady}}
-      <table style="margin-top: 20px" class="ui celled table">
-        <thead>
-        <tr>
-          <th>Location</th>
-          <th>Store Name</th>
-          <th>Favorite Food Spot</th>
-          <th>Top Item</th>
-          <th>Current Menu</th>
-          <th>Rate</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        {{#each contact in contactsList}}
-          <tr>
-            <td>{{contact.first}}</td>
-            <td>{{contact.last}}</td>
-            <td>{{contact.address}}</td>
-            <td>{{contact.telephone}}</td>
-            <td>{{contact.email}}</td>
-            <td><a href="{{pathFor 'Edit_Contact_Page' _id=contact._id}}">Edit</a></td>
-          </tr>
-        {{/each}}
-        </tbody>
-      </table>
-    {{else}}
-      {{> Loading}}
-    {{/if}}
-
+  <div class="ui middle aligned raised grid segment container">
+    <div class="row">
+      <div class="eight wide column" style="margin-top: 20px">
+        <img class="ui middle aligned centered image"
+             src="http://manoa.hawaii.edu/food/resources/images/honoluluGourmetSideLogo.png">
+        <h1>Honolulu Gourmet</h1>
+        <p>Located in Paradise Palms Cafe</p>
+        <strong>Top Items Available Now</strong>
+        <div class="ui list">
+          <div class="item">Hot Taco Bar $5.99</div>
+          <div class="item">Grilled Cheese Panini $4.99</div>
+        </div>
+      </div>
+      <div class="eight wide column" style="margin-top: 20px">
+        <img class="ui middle aligned centered image"
+             src="http://manoa.hawaii.edu/food/resources/images/LandLSideLogo3.png">
+        <h1>L&L Hawaiian Barbecue</h1>
+        <p>Located in Paradise Palms Cafe</p>
+        <strong>Top Items Available Now</strong>
+        <div class="ui list">
+          <div class="item">Chicken Katsu Curry $6.99</div>
+          <div class="item">Mochiko Chicken $7.50</div>
+        </div>
+      </div>
+      <div class="eight wide column" style="margin-top: 40px">
+        <img class="ui middle aligned centered image"
+             src="https://uhm.sodexomyway.com//images/starbucks_tcm640-2485.png">
+        <h1>Starbucks</h1>
+        <p>Located in Campus Center, 2nd floor</p>
+        <strong>Top Items Available Now</strong>
+        <div class="ui list">
+          <div class="item">Pumpkin Spice Latte $4.99-$6.99</div>
+          <div class="item">Pumpkin Spice Frappucino $4.99-$6.99</div>
+        </div>
+      </div>
+      <div class="eight wide column" style="margin-top: 40px">
+        <img class="ui middle aligned centered image"
+             src="https://uhm.sodexomyway.com/images/jamba%20juice_tcm640-2474.png">
+        <h1>Jamba Juice</h1>
+        <p>Located in Campus Center, 2nd floor</p>
+        <strong>Top Items Available Now</strong>
+        <div class="ui list">
+          <div class="item">Pumpkin Smash $4.99-$6.99</div>
+          <div class="item">Pumpkin Delight $4.99-$6.99</div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>

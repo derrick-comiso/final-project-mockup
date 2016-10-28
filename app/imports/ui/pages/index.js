@@ -10,3 +10,5 @@ import './home-page.js';
 import './available-foods-page.html';
 
 import './top-picks-page.html';
+
+import './login-page.html';

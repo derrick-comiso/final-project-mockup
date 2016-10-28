@@ -3,11 +3,11 @@
   <div style="margin: 0px; border-radius: 0px" class="ui borderless inverted menu">
     <div class="ui container">
       <a class="item" href="{{pathFor 'Home_Page'}}"><h1>Manoa Munchies</h1></a>
-      <a class="{{ isActiveRoute 'Add_Contact_Page'}} item" href="{{ pathFor 'Add_Contact_Page' }}">Profile </a>
+      <a class="{{ isActiveRoute 'Add_Contact_Page'}} right item" href="{{ pathFor 'Add_Contact_Page' }}">Profile </a>
       <a class="{{ isActiveRoute 'Available_Foods_Page'}} item" href="{{ pathFor 'Available_Foods_Page' }}">Foods
         Available Now</a>
       <a class="{{ isActiveRoute 'Top_Picks_Page'}} item" href="{{ pathFor 'Top_Picks_Page' }}">Today's Top Picks</a>
-      <a class="item">Login</a>
+      <a class="{{ isActiveRoute 'Login_Page'}} item" href="{{ pathFor 'Login_Page'}}">Login</a>
     </div>
   </div>
 </template>
